@@ -1,0 +1,142 @@
+@font-face {
+    font-family: Ping;
+    src:url("../font/苹方字体.ttf");
+}
+
+#extra a{
+    color: #333333;
+}
+
+#extra a :hover{
+    text-decoration: none;
+}
+
+#info a{
+    color: #333333;
+}
+
+body div{
+    font-family: KaiTi;
+}
+#background{
+    margin: auto;
+    margin-top: 35px;
+    /* background-color: #FFFAA9; */
+    text-align: center;
+    width: 80%;
+    height: 150px;
+    background: url(../image/back.jpg);
+}
+#logo{
+    vertical-align:middle;
+    height: 250px;
+    margin-left: -7%;
+    margin-right: -7%;
+    margin-top: -3%;
+}
+#head{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    font-size:80px;
+    color:rgba(180,109,25,1);
+    /* position: relative; */
+    /*top: 50%; /*偏移*/
+    transform: translateY(-7%);
+}
+#head span{
+    font-family: FangSong;
+}
+#header{
+    /* height:34px; */
+    margin-left: 10%;
+    font-size:25px;
+    font-family:Baoli SC;
+    font-weight:400;
+    /* line-height:34px; */
+    color:rgba(180,109,25,1);
+    margin-top: 20px;
+}
+
+#header a{
+    color:rgba(180,109,25,1);
+}
+
+#header a:hover{
+    text-decoration: none;
+}
+
+#content{
+    margin-top: 2%;
+    width: 90%;
+}
+#extra{
+    margin-left: 11%;
+    width: 18%;
+    float: left;
+}
+#history{
+    width: 100%;
+    float: left;
+}
+#his_head{
+    height: 50px;
+}
+#his_head>p{
+    font-size: 26px;
+    color:#FF9E33;
+}
+#recommend{
+    width: 100%;
+    float: left;
+    clear: both;
+}
+#rec_head{
+    height: 50px;
+}
+#rec_head>p{
+    font-size: 26px;
+    color:#FF9E33;
+}
+
+#info{
+    margin-left: 2%;
+    width: 69%;
+    float: left;
+}
+.info-inner{
+    font-size: 20px;
+}
+.info-inner a{
+    padding-top: 15px;
+}
+#info-result{
+    height:70px;
+    font-size:30px;
+    font-weight:400;
+    line-height:70px;
+    color:rgba(240,179,16,1);
+    display: inline-flex;
+}
+#info-result>span{
+    font-family: Ping;
+}
+#info-table{
+    /* margin-left: 10%; */
+    /* table-layout:fixed; */
+    font-size: 20px;
+    text-align: center;
+}
+#info-table th{
+    text-align: center;
+    font-size: 25px;
+    width: 20%;
+}
+td{
+    width: 20%;
+}
+li{font-size: 20px;}
+
+#info-pagination{
+    text-align: right;
+}

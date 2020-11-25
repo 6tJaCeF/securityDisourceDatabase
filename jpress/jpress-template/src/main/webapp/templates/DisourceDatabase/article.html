@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/article.css">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <title>#(WEB_NAME ??) 文章</title>
+</head>
+<body>
+    <div class="pageHead">
+        <div id="head"><span>国家</span>
+            <img id="logo" src="#(CPATH)/templates/DisourceDatabase/static/image/logo.png"/>
+        <span>全话语数据库</span></div>
+        <div id="artitleType">
+            #articleCategories(article.id,"category")
+                #for(category : categories)
+                <a href="#(category.url ??)">#(category.title ??)</a>
+                #end
+            #end
+        </div>
+        <div id=""></div>
+    </div>
+    <div class="articleInfo">
+        <div class="articleTitle">
+            <h2 id="title">#(article.title ??)</h2>
+            <div class="author">
+                <span>
+                    #articleCategories(article.id,"tag")
+                        #for(category : categories)
+                        <a href="#(category.url ??)">#(category.title ??)</a>
+                        #end
+                    #end
+                </span>
+            </div>
+            <div class="orgn">
+                <span><a href=""></a></span>
+            </div>
+            <hr>
+        </div>
+        <div class="articleContent">
+            #(article.content ??)
+        </div>
+    </div>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/jquerysession.js"></script>
+    <script src="static/js/article.js"></script>
+</body>
+</html>

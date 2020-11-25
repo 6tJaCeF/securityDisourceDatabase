@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/homepage.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/bootstrap.css" />
+    <link rel="stylesheet" href="static/datepicker/css/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" href="static/css/swiper.min.css">
+    <title>#(WEB_NAME ??) #(WEB_TITLE ??)</title>
+</head>
+
+<body>
+<div class="container-fluid main">
+    <div id="background" class="row">
+        <div id="head"><span>国家</span>
+            <img id="logo" src="#(CPATH)/templates/DisourceDatabase/static/image/logo.png"/>
+            <span>全话语数据库</span></div>
+        <div id="search" class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="swiper-container banner">
+                        <div class="swiper-wrapper">
+                            #articles(orderBy="view_count",count=5)
+                            #for(article:articles)
+                            <div class="swiper-slide">
+                                <a href="#(article.url)">#(article.title)</a>
+                            </div>
+                            #end
+                            #end
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <form id="searchform" action="#(CPATH)/article/search" class="input-group" method="GET" target="_blank">
+                        <div class="input-group">
+                            <input type="text" class="form-control"  name="keyword" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit">Go!</button>
+                                </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 language">
+                    <span>国别:
+                        <select>
+                            <option value ="china">中国</option>
+                            <option value ="america">美国</option>
+                            <option value="russia">俄罗斯</option>
+                            <option value="japan">日本</option>
+                            <option value="korea">韩国</option>
+                            <option value="india">印度</option>
+                          </select>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="types" class="row">
+        #categories()
+        #for(category : categories)
+        #if((for.count) <= 7)
+        <span class="type">
+                            <a href="#(category.url)">#(category.title)</a>
+                        </span>
+        #end
+        #end
+        #end
+    </div>
+    <div class="tags">
+        <div class="tags-prev"></div>
+        <div class="tags-banner swiper-container">
+            <div class="swiper-wrapper">
+                #tags(count = 1000)
+                #for(tag : tags)
+                <div class="swiper-slide tag">
+                    <a href="#(tag.url)">#(tag.title)</a>
+                </div>
+                #end
+                #end
+            </div>
+        </div>
+        <div class="tags-next"></div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-logo">
+                    <img src="#(CPATH)/templates/DisourceDatabase/static/image/centre.jpg" alt="">
+                    #(WEB_COPYRIGHT ??)
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="static/js/jquery.js"></script>
+<script src="static/js/jquerysession.js"></script>
+<script src="static/js/jquery.cookie.js"></script>
+<script src="static/js/homepage.js"></script>
+<script src="static/js/swiper.min.js"></script>
+</body>
+
+</html>
