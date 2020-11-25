@@ -24,7 +24,7 @@ public class DirectveKit {
         int dotIndexOf = url.lastIndexOf(".");
         int splitIndexOf = url.lastIndexOf("-");
 
-        if (dotIndexOf < 0 & splitIndexOf < 0) {
+        if (dotIndexOf < 0 && splitIndexOf < 0) {
             return url + "-" + pageNumber;
         }
 
