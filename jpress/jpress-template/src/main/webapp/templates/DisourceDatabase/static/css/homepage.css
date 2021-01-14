@@ -16,7 +16,7 @@ body div{
     vertical-align:middle;
     height: 250px;
     margin-left: -7%;
-    margin-right: -7%;
+    margin-right: -2%;
     margin-top: -3%;
 }
 #head{
@@ -24,7 +24,7 @@ body div{
     font-family: 'Times New Roman', Times, serif;
     width: 100%;
     float: left;
-    font-size:80px;
+    font-size:50px;
     color:rgba(180,109,25,1);
     margin-top: 5%;
     font-weight: 900;
@@ -131,6 +131,7 @@ body div{
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    width: 100%;
 }
 .type{
     margin-top: 2%;
