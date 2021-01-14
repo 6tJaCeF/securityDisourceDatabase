@@ -118,7 +118,7 @@ body div{
     color: #fffefa;
     padding-top: 7px;
     padding-bottom: 7px;
-    border: 3px solid #B46D19;
+    /* border: 3px solid #B46D19; */
     margin: auto;
 }
 .tag>a:hover{
@@ -153,10 +153,10 @@ body div{
     text-align: center;
     color:  #C77608;
     text-decoration: none;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding-top: 15px;
     padding-bottom: 15px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     margin: auto;
 }
 .type>a:hover{
