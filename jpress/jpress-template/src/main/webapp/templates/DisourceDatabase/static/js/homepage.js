@@ -1,5 +1,5 @@
-$(document).ready(function(){
-    var banner = new Swiper('.banner',{
+$(document).ready(function () {
+    var banner = new Swiper('.banner', {
         direction: 'vertical',
         autoplay: {
             delay: 3000,
@@ -8,12 +8,20 @@ $(document).ready(function(){
         },
         loop: true
     });
-    var tagsBanner = new Swiper('.tags-banner',{
+    var tagsBanner = new Swiper('.tags-banner', {
         slidesPerView: 6,
-        spaceBetween : 60,
+        spaceBetween: 60,
         navigation: {
             nextEl: '.tags-next',
             prevEl: '.tags-prev',
         }
     });
+    $(".change").change(function () {
+        var value = $(this).val()
+        if (value == "america") {
+            window.location.href = "/DisourceDatabase-en/"
+        } else if (value == "russia") {
+            window.location.href = "/DisourceDatabase-ru/"
+        }
+    })
 });
