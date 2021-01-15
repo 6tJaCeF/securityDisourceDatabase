@@ -3,19 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>#(WEB_NAME ??) Article page List</title>
+    <title>#(WEB_NAME ??) Список статей</title>
     <link rel="stylesheet" href="static/css/content.css">
     <link rel="stylesheet" href="static/css/bootstrap.css">
 </head>
 
 <body>
     <div id="header">
-        <p><a href="#(CPATH)/">Front page</a> > #(category.title??)</p>
+        <p><a href="#(CPATH)/">Главная</a> > #(category.title??)</p>
     </div>
     <div id="background">
         <div id="head">
             <img id="logo" src="#(CPATH)/templates/DisourceDatabase/static/image/logo.png" />
-            <span>Data Bank of National Security Discourses</span>
+            <span>База данных национальной безопасности</span>
         </div>
     </div>
 
@@ -24,7 +24,7 @@
         <div id="extra">
             <div id="history" class="panel panel-warning">
                 <div id="his_head" class="panel-heading">
-                    <p>&nbsp;&nbsp;hot search</p>
+                    <p>&nbsp;&nbsp;поиск</p>
                 </div>
                 <div id="his_data" class="panel-body">
                     <ul>
@@ -38,7 +38,7 @@
             </div>
             <div id="recommend" class="panel panel-warning">
                 <div id="rec_head" class="panel-heading">
-                    <p>&nbsp;&nbsp;recommendation</p>
+                    <p>&nbsp;&nbsp;горячии статьи</p>
                 </div>
                 <div id="rec_data" class="panel-body">
                     <ul>
@@ -66,8 +66,8 @@
         <div id="info">
             <div id="info-select">
                 <ul class="nav nav-tabs">
-                    <li role="presentation" class="active"><a href="#">categorization</a></li>
-                    <li role="presentation"><a href="#">source</a></li>
+                    <li role="presentation" class="active"><a href="#">каталог</a></li>
+                    <li role="presentation"><a href="#">источник</a></li>
                 </ul>
                 <div class="info-inner row" name="分类">
                     #categories(count=7)
@@ -84,15 +84,15 @@
                     #end
                 </div>
             </div>
-            <div id="info-result">#(category.title??)，total found item<span
+            <div id="info-result">Всего найдено #(category.title??)<span
                     style="margin-left: 15px;">#(category.count??)</span></div>
             <div id="info-table">
                 <table class='table table-striped' id="table">
                     <tr>
-                        <th>title</th>
-                        <th>category</th>
-                        <th>content</th>
-                        <th>search</th>
+                        <th>название</th>
+                        <th>каталог</th>
+                        <th>контент</th>
+                        <th>поиск</th>
                     </tr>
                     #for(article : articlePage.list)
                     <tr>
@@ -106,7 +106,7 @@
                                 #end
                         </td>
                         <td>#maxLength(article.text,20)</td>
-                        <td><a href="#(article.url)">dossier detail</a></td>
+                        <td><a href="#(article.url)">Подробности</a></td>
                     </tr>
                     #end
                 </table>
@@ -114,7 +114,7 @@
             <div id="info-pagination">
                 <nav aria-label="Page navigation">
                     <ul class="pagination">
-                        #articlePaginate(previousText="previous page",nextText="next page")
+                        #articlePaginate(previousText="предыдущая",nextText="следующая")
                         #for(page : pages)
                         <li>
                             <a class="page-link" href="#(page.url ??)">

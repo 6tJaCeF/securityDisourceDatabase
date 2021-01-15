@@ -20,8 +20,8 @@ $(document).ready(function () {
         var value = $(this).val();
         if (value == "china") {
             window.location.href = "/DisourceDatabase-cn"
-        } else if (value == "russia") {
-            window.location.href = "/DisourceDatabase-ru"
+        } else if (value == "america") {
+            window.location.href = "/DisourceDatabase-en"
         }
     })
 });
