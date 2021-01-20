@@ -24,7 +24,7 @@ body div{
     font-family: 'Times New Roman', Times, serif;
     width: 100%;
     float: left;
-    font-size:50px;
+    font-size:40px;
     color:rgba(180,109,25,1);
     margin-top: 5%;
     font-weight: 900;
@@ -120,6 +120,7 @@ body div{
     padding-bottom: 7px;
     /* border: 3px solid #B46D19; */
     margin: auto;
+    font-size: 20px;
 }
 .tag>a:hover{
     text-decoration: none;
@@ -141,7 +142,7 @@ body div{
     display: flex;
     -webkit-align-items: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
     background-color: #cfcece4d;
     width: 140px;
     height: 80px;
