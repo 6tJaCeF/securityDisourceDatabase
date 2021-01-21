@@ -14,10 +14,6 @@
 #info a{
     color: #333333;
 }
-
-body div{
-    font-family: KaiTi;
-}
 #background{
     margin: auto;
     margin-top: 35px;
@@ -38,14 +34,11 @@ body div{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     width: 100%;
-    font-size:50px;
+    font-size:40px;
     color:rgba(180,109,25,1);
     /* position: relative; */
     /*top: 50%; /*偏移*/
     transform: translateY(-7%);
-}
-#head span{
-    font-family: FangSong;
 }
 #header{
     /* height:34px; */
@@ -83,7 +76,7 @@ body div{
     height: 50px;
 }
 #his_head>p{
-    font-size: 26px;
+    font-size: 20px;
     color:#FF9E33;
 }
 #recommend{
@@ -95,7 +88,7 @@ body div{
     height: 50px;
 }
 #rec_head>p{
-    font-size: 26px;
+    font-size: 20px;
     color:#FF9E33;
 }
 
