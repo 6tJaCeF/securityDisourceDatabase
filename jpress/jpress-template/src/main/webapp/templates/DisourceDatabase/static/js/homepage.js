@@ -19,9 +19,9 @@ $(document).ready(function () {
     $(".change").change(function () {
         var value = $(this).val();
         if (value == "china") {
-            window.location.href = "/DisourceDatabase-cn"
+            window.location.href = "/cn"
         } else if (value == "russia") {
-            window.location.href = "/DisourceDatabase-ru"
+            window.location.href = "/ru"
         }
     })
 });
