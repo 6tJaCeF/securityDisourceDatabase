@@ -19,9 +19,9 @@ $(document).ready(function () {
     $(".change").change(function () {
         var value = $(this).val()
         if (value == "america") {
-            window.location.href = "/DisourceDatabase-en/"
+            window.location.href = "/en/"
         } else if (value == "russia") {
-            window.location.href = "/DisourceDatabase-ru/"
+            window.location.href = "/ru/"
         }
     })
 });
