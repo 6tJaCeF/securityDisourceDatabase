@@ -66,6 +66,10 @@ body div{
     height: 68px;
 }
 
+.banner .swiper-slide{
+    overflow: hidden;
+}
+
 .tags{
     height: 70px;
     display: flex;
